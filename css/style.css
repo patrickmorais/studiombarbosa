@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=B612+Mono:wght@700&family=Nunito+Sans:wght@800&family=Open+Sans:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
 
 @font-face {
     font-family: 'Brandom';
@@ -21,6 +22,7 @@
 --color-hover: #76807A;
 --color-button: #d3b094;
 --color-info: #fff;
+--font-info: font-family: 'Poppins', sans-serif;
 
 }
 
@@ -127,7 +129,7 @@ nav .navbar {
     position: absolute;
     width: 15rem;
     line-height: 40px;
-    top: 80px;
+    top: 81px;
     left: 0;
     background-color: var(--color-header);
     border-radius: 0 0 5px 4px;
@@ -207,7 +209,7 @@ section .sliders .slide img {
 
 section .sliders .slide .info .desc {
     color: var(--color-info);
-    font-family: 'Open Sans', sans-serif;
+    font-family: var(--font-info);
     font-weight: 800;
     font-size: 50px;
 }

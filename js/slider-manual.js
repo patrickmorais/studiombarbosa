@@ -1,8 +1,7 @@
+// Javascript manual navegation picture
 var slides = document.querySelectorAll('.slide');
 var btns = document.querySelectorAll('.btn');
 let currentSlide = 1;
-
-// Javascript navegation picture
 
 var manualNav = function (manual) {
     slides.forEach((slide) => {
