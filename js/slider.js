@@ -1,13 +1,25 @@
-let count = 1;
-document.getElementById("radio1").checked = true;
-setInterval( function(){
-    nextImage();
-}, 4000)
+var slides = document.querySelectorAll('.slide');
+var btns = document.querySelectorAll('.btn');
+let currentSlide = 1;
 
-function nextImage(){
-    count ++;
-    if (count > 4) {
-        count = 1;
-    }
-    document.getElementById("radio" + count).checked = true;
+// Javascript navegation picture
+
+var manualNav = function (manual) {
+    slides.forEach((slide) => {
+        slide.classList.remove('active');
+
+        btns.forEach((btn) => {
+            btn.classList.remove('active');
+        });
+    });
+
+    slides[manual].classList.add('active');
+    btns[manual].classList.add('active');
 }
+btns.forEach((btn, i) => {
+    btn.addEventListener("click", () => {
+        manualNav(i);
+    });
+});
+
+
